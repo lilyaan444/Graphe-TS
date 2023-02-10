@@ -5,6 +5,8 @@ git add // permet d'ajouter des fichier a suivre sur git en local
 git commit -m "" // permet de valider les fichier que nous avons ajouter avec git add (tout ça se passe en local pour le moment)
 git remote add origin https://.... // permet de lier le dépot local au dépot distant 
 git push -u origin master // permet d'envoyer les fichier du dépot local sur le serveur distant (origin --> master)
+git rm helloworld.ts // permet de supprimer un fichier sur git 
+git mv io.ts entrees-sorties.ts // renommer le fichier io.ts en entrees-sorties.tes
 
 Questions :
 
