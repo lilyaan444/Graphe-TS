@@ -4,7 +4,7 @@ git init //crée un répertoire .git dans le dossier ou vous vous situez en loca
 git add // permet d'ajouter des fichier a suivre sur git en local
 git commit -m "" // permet de valider les fichier que nous avons ajouter avec git add (tout ça se passe en local pour le moment)
 git remote add origin https://.... // permet de lier le dépot local au dépot distant 
-
+git push -u origin master // permet d'envoyer les fichier du dépot local sur le serveur distant (origin --> master)
 
 Questions :
 
@@ -25,3 +25,7 @@ Comment vérifier que le commit a bien été effectué et que le dépôt local e
 Encore une fois git status et on vois que tout les fichier qui était en attente de commit en vert on était effacer 
 Comment vérifier que le dépôt local est bien lié au dépôt distant ?
 git remote -v pour vérifier que le dépot local est bien liée au dépot distant
+
+
+Comment vérifier que le dépôt distant et le dépôt local sont synchronisés ?
+On peux le voir sur gitlab en allant voir sur la page commit
