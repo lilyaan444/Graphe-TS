@@ -1,0 +1,27 @@
+Commandes utilisées :
+
+git init //crée un répertoire .git dans le dossier ou vous vous situez en local
+git add // permet d'ajouter des fichier a suivre sur git en local
+git commit -m "" // permet de valider les fichier que nous avons ajouter avec git add (tout ça se passe en local pour le moment)
+git remote add origin https://.... // permet de lier le dépot local au dépot distant 
+
+
+Questions :
+
+ Comment connaître les fichiers / répertoires présents dans le dossier de travail non suivis par Git ?
+ Il faut utiliser git status // permet de voir l'état des fichiers si il ont été commit ou si il sont non suivis 
+ 
+ 
+ Faites en sorte que le répertoire node_modules et le fichier package-lock.json ne soient pas
+considérés par Git. Comment vérifier qu'ils ne sont plus considérés par Git ?
+Pour ce faire on utilise .gitignore on fait echo "nom_du_fichier/dossier" >> .gitignore pour qu'ils ne soient pas considérés par git. Pour vérifier qu'ils ne sont pu considérés par le git on gait git status et on peut voir que dans les fichiers non suivis il y a .gitignore
+
+
+Comment vérifier que les fichiers / répertoires sont bien indexés ?
+On fait un git status et on peux voir les fichier qui seront suivis en vert 
+
+
+Comment vérifier que le commit a bien été effectué et que le dépôt local est bien à jour ?
+Encore une fois git status et on vois que tout les fichier qui était en attente de commit en vert on était effacer 
+Comment vérifier que le dépôt local est bien lié au dépôt distant ?
+git remote -v pour vérifier que le dépot local est bien liée au dépot distant
