@@ -1,0 +1,5 @@
+// Recommend : prettier, errorlens, coderunner, eslint
+
+{
+    "recommendations": ["esbenp.prettier-vscode", "formulahendry.code-runner", "usernamehw.errorlens", "dbaeumer.vscode-eslint", "SonarSource.sonarlint-vscode"],
+}
