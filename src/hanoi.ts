@@ -45,9 +45,18 @@ export class Hanoi {
   play(): number {
     let nbMoves = 0;
 
-    while (this._towers[this._towers.length - 1].size() < this._nbDiscs) {
-      this.turn();
-      nbMoves++;
+    try {
+      while (this._towers[this._towers.length - 1].size() < this._nbDiscs) {
+        this.turn();
+        nbMoves++;
+      }
+    } catch (error) {
+      if (error instanceof HanoiError) {
+        console.log("erreur : " + error.message);
+        this.play();
+      } else {
+        throw error;
+      }
     }
 
     return nbMoves;
